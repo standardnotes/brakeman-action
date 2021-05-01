@@ -16,6 +16,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Brakeman action
         uses: standardnotes/brakeman-action@v1.0.0
         with:
