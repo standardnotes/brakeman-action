@@ -1,4 +1,4 @@
-name: Brakeman action
+name: Brakeman code scanning
 description: A GitHub action to run Brakeman, a static analysis security vulnerability scanner for Ruby on Rails applications
 author: Johnny Almonte
 
