@@ -1,0 +1,17 @@
+name: Brakeman action
+description: A GitHub action to run Brakeman, a static analysis security vulnerability scanner for Ruby on Rails applications
+author: Johnny Almonte
+
+branding:
+  icon: 'activity'
+  color: 'red'
+
+inputs:
+  options:
+    description: "Scanning options (https://github.com/presidentbeef/brakeman/blob/main/OPTIONS.md)"
+
+runs:
+  using: docker
+  image: docker://presidentbeef/brakeman
+  args:
+    - ${{ inputs.options }}
